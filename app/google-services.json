@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "975429814213",
+    "project_id": "thithuandroid-ff4fd",
+    "storage_bucket": "thithuandroid-ff4fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975429814213:android:a336a6ec07c6d02dbcedac",
+        "android_client_info": {
+          "package_name": "com.example.lenguyenthanhvinh_18053681_thithu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975429814213-7tlv5t2cooeji36c5tfs5nnam6babpif.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGI_0FYM0R4zbAyDXhG6xsazaGz5898Yo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "975429814213-7tlv5t2cooeji36c5tfs5nnam6babpif.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

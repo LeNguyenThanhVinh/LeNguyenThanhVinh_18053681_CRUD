@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtEmailDangNhap"
+        android:layout_width="285dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="152dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPasswordDangNhap"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Type password"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtEmailDangNhap"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtEmailDangNhap"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailDangNhap" />
+
+    <Button
+        android:id="@+id/btnDN"
+        android:layout_width="282dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/btnsignin"
+        android:text="SIGN IN"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtPasswordDangNhap"
+        app:layout_constraintStart_toStartOf="@+id/txtPasswordDangNhap"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordDangNhap" />
+</androidx.constraintlayout.widget.ConstraintLayout>
