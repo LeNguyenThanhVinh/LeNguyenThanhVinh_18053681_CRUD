@@ -34,7 +34,7 @@ public class Mock_API extends AppCompatActivity {
     Button btnThem, btnSua;
     ArrayAdapter<String> arrayAdapter;
     ArrayList<String> arrayList;
-    TextView tvDisplay;
+    TextView txtName, txtAge;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +42,8 @@ public class Mock_API extends AppCompatActivity {
         listDanhSach = findViewById(R.id.lstDanhSach);
         btnThem = findViewById(R.id.btnThem);
         btnSua = findViewById((R.id.btnSua));
-        tvDisplay = findViewById(R.id.txtTen);
+        txtName = findViewById(R.id.txtName);
+        txtAge = findViewById(R.id.txtAge);
         arrayList = new ArrayList<String>();
         //GetData(url);
         GetArrayJson(url);
@@ -52,6 +53,7 @@ public class Mock_API extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 PostApi(url);
+               // arrayAdapter.add(arrayList.get(arrayList.size()));
             }
         });
         DeleteApi(url);
@@ -156,14 +158,13 @@ public class Mock_API extends AppCompatActivity {
 
                 HashMap<String, String>
                         params = new HashMap<>();
-                params.put("id","17");
-                params.put("name", "Lâm");
-                params.put("age", "40");
-
+                params.put("id",String.valueOf(arrayList.size()+1) );
+                params.put("name",txtName.getText().toString() );
+                params.put("age", txtAge.getText().toString());
+                arrayAdapter.add(params.toString());
                 return params;
             }
         };
-
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
     }

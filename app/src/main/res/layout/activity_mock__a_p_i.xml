@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtTen"
+        android:id="@+id/txtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -28,7 +28,7 @@
         app:layout_constraintTop_toBottomOf="@+id/lstDanhSach" />
 
     <EditText
-        android:id="@+id/txtTen2"
+        android:id="@+id/txtAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -38,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTen" />
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
 
     <Button
         android:id="@+id/btnThem"
@@ -46,15 +46,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:text="Thêm"
-        app:layout_constraintStart_toStartOf="@+id/txtTen2"
-        app:layout_constraintTop_toBottomOf="@+id/txtTen2" />
+        app:layout_constraintStart_toStartOf="@+id/txtAge"
+        app:layout_constraintTop_toBottomOf="@+id/txtAge" />
 
     <Button
         android:id="@+id/btnSua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sửa"
-        app:layout_constraintEnd_toEndOf="@+id/txtTen2"
+        app:layout_constraintEnd_toEndOf="@+id/txtAge"
         app:layout_constraintTop_toTopOf="@+id/btnThem" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
